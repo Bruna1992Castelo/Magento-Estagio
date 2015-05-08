@@ -1,0 +1,8 @@
+<?xml version="1.0.0"?>
+<layout version="1.0.0">
+    <query_salesrecovery_adminhtml_salesRecovery_index module="Query_SalesRecovery">
+        <reference name="content">
+            <block type="Query_SalesRecovery/adminhtml_SalesRecovery" name="salesrecovery" />
+        </reference>
+    </query_salesrecovery_adminhtml_salesRecovery_index>
+</layout>

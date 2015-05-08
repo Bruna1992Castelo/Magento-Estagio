@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sales>
+            <children>
+                <salesrecovery translate="title" module="Query_SalesRecovery">
+                    <depends>
+                        <config>salesrecovery/settings/active</config>
+                    </depends>
+                    <title>Query - Sales Recovery</title>
+                    <sort_order>1170</sort_order>
+                    <action>querysalesrecovery/adminhtml_salesRecovery/index/</action>
+                </salesrecovery>
+            </children>
+        </sales>
+    </menu>
+   	<acl>
+        <resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <salesrecovery translate="title" module="Query_SalesRecovery">
+                                        <title>Query Commerce</title>
+                                        <sort_order>1100</sort_order>
+                                    </salesrecovery>
+                                 </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+ </config>
